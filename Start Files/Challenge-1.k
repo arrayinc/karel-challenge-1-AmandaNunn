@@ -43,7 +43,9 @@ function getPaper(){
 }
 
 function returnToStart(){
-	while(frontIsClear()){move();}
+	while(frontIsClear()){
+    move();
+  }
 	turnRight();
 	move();
 	turnRight();
