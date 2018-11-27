@@ -24,3 +24,27 @@ shown in the outline.
  */
 
 import "turns";
+
+function SolveChallenge(){
+	getPaper();
+	pickBeeper();
+	turnAround();
+	returnToStart();
+}
+
+function getPaper(){
+	while(frontIsClear()){
+		move();
+	}
+	turnRight();
+	move();
+	turnLeft();
+	move();
+}
+
+function returnToStart(){
+	while(frontIsClear()){move();}
+	turnRight();
+	move();
+	turnRight();
+}
